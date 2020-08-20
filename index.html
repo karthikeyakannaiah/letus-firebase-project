@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetUs</title>
+        <link rel="stylesheet" href="app.css">
+        <link rel="icon" href="icon2.png" type="image/x-icon">
+    </head>
+    <body>
+        <h1 id="title">LetUs</h1>
+        <h3 id="descr">A platform for Us</h3>
+        <p id="own">@KDL-projects-2020</p>
+        <p id="own">team<b>ACHIEVER</b></p>
+        <div class="container" id="lgnm">
+            <button class="btn btn1" onclick="lgnm()"><b>Login</b></button>
+        </div>
+        <div id="lgn">
+            <input type="email" name="email" placeholder="Enter Email" id="email" required><br><br>
+            <input type="password" placeholder="Enter Password" id="psw" required><br><br>
+            <button class="btn btn1" id="login" onclick="login()">LOGIN</button>
+        </div>
+        <div class="container" id="sgnp">
+            <button class="btn btn1"  onclick="sgnp()"><b>signup</b></button>
+        </div>
+        <div id="sgn">
+            <input type="email" name="email" placeholder="Enter Email" id="email_s" required><br><br>
+            <input type="password" placeholder="Enter Password" id="pass" required><br><br>
+            <button class="btn btn1" id="signup" onclick="signup()">SIGNUP</button>
+        </div>
+        <div id="signed_in">
+            <div id="navbar">
+                <a class="active" href="index.html">Let Us</a>
+                <a href="myposts.html" id="myposts">My posts</a>
+                <a href="profileandsettings.html">Profile and Settings</a>
+                <a href="javascript:void(0)">Contact</a>
+                <button class="btn btn1" id="logout" onclick="logout()">LOGOUT</button>
+            </div>
+            <div class="content" id="home">
+                <div id="user_para"></div>
+                <form>
+                    <input type="text" name="mind" placeholder="so what is on your mind?" id="mindItem">
+                    <input type="button" value="post to yourself" id ="updatemind">
+                    
+                </form>
+                <div id="mindthings" class="posts"></div>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyAZ_Kl887_u0uenpD4QIseeAq4i62LmAvM",
+            authDomain: "letus-7d9c3.firebaseapp.com",
+            databaseURL: "https://letus-7d9c3.firebaseio.com",
+            projectId: "letus-7d9c3",
+            storageBucket: "letus-7d9c3.appspot.com",
+            messagingSenderId: "137689012095",
+            appId: "1:137689012095:web:64c87b36dda2dd5d082c4a",
+            measurementId: "G-TH5P19LY0K"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans',"montserrat",sans-serif;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn{
+    border: none;
+    margin: 20px;
+    padding: 24px;
+    width: 220px;
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color:black;
+    background-size: 200%;
+    transition: 0.6s;
+}
+.btn1{
+    background-color: yellow;
+    
+}
+.btn:hover{
+    background-position: right;
+}
+#title,#descr,#own{
+    color:white;
+    text-align:center;
+    font-family: 'lucida-sans',"montserrat",sans-serif;
+    
+}
+#lgn{
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: none;  
+}
+#uname , #psw{
+    margin: 20px;
+    padding: 24px 24px;
+    width: 220px;
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border-color: black();
+}
+#login,#signup{
+    border-radius: 6px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+#sgnp{
+    top: 50%
+}
+#sgn{
+    display:none;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: none;
+}
+#lgn input, #sgn input{
+    padding: 20px 30px;
+    border-radius: 6px;
+    border: 8px orange;
+    color: orange;
+    background-color: black;
+    text-decoration: none;
+}
+#own{
+    font-size: 10px;
+    color: orange;
+    
+}
+#signed_in {
+    display: none;
+}
+#logout{
+    border: 2px;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    position: static;
+    background-image: linear-gradient(to right,orange,yellow,orange,red);
+}
+#updatemind,#posts{
+    border: 2px;
+    margin: 10px;
+    padding: 15px;
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    position: static;
+    background-image: linear-gradient(to right,orange,yellow,rgba(255, 255, 0, 0.685));
+    border-top-left-radius: 0px;
+}
+#mindItem{
+    border: 2px;
+    margin: 10px;
+    font-family: sans-serif;
+    padding: 18px;
+    width: 200px;
+    color: orange;
+    text-decoration: none;
+    background-color: aliceblue;
+}
+#user_para{
+    font-family: "montserrat",sans-serif;
+}
+#navbar {
+    overflow: hidden;
+    background-color: yellow  ;
+    border-radius: 20px;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  #navbar a:hover {
+    background-color: orange;
+    color: black;
+    border-radius: 20px;
+  }
+  
+  #navbar a.active {
+    background-color: orange;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  #navbar #logout {
+      float:right;
+      font-size: 10px;
+      text-transform: uppercase;
+      
+  } 
+#mindthings .posts{
+    padding: 20px;
+    width: 500px;
+    border-radius: 50px;
+    background-color: yellow;
+}
+#profilesettings,#post-nav{
+    display: none;
+}

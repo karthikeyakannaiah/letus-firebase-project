@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon2.png" type="image/x-icon">
+    <title>LetUs</title>
+    <style>
+        body{
+            background-color:black;
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat",sans-serif;
+        }
+        #owned{
+            font-size: 10px;
+            color: orange;
+            text-align: center;
+        }
+        #navbar #logout {
+            float:right;
+            font-size: 10px;
+            text-transform: uppercase;
+            
+        } 
+        #logout{
+            border: 2px;
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            text-align: center;
+            position: static;
+            background-image: linear-gradient(to right,orange,yellow,orange,red);
+        }
+        .btn{
+            border: 2px;
+            margin: 20px;
+            padding: 24px;
+            width: 220px;
+            font-family: "montserrat",sans-serif;
+            text-transform: uppercase;
+            border-radius: 6px;
+            cursor: pointer;
+            color:Black;
+            background-size: 200%;
+            transition: 0.6s;
+        }
+        .btn1{
+            background-image: linear-gradient(to left,orange,white,orange);
+            
+        }
+        .btn:hover{
+            background-position: right;
+        }
+        #title,#descr,#own{
+            color:rgb(0, 0, 0);
+            text-align:center;
+            font-family: "montserrat",sans-serif;
+            
+        }
+        #navbar {
+            overflow: hidden;
+            background-color: yellow  ;
+            border-radius: 20px;
+        }
+        
+        #navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        
+        #navbar a:hover {
+            background-color: orange;
+            color: black;
+            border-radius: 20px;
+        }
+        
+        #navbar a.active {
+            background-color: orange;
+            color: white;
+            border-radius: 20px;
+        }        
+        #navbar a.newactive {
+            background-color: orange;
+            color: black;
+            border-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="title" style="color:white">LetUs</h1>
+    <h3 id="descr" style="color:white">A platform for Us</h3>
+    <p id="owned">@KDL-projects-2020</p>
+    <p id="owned">team<b>ACHIEVER</b></p>
+    <div id="navbar">
+        <a class="active" href="index.html">Let Us</a>
+        <a href="myposts.html">My posts</a>
+        <a href="profileandsettings.html" class="newactive" id="proset">Profile and Settings</a>
+        <a href="javascript:void(0)">Contact</a>
+        <button class="btn btn1" id="logout" onclick="logout()">LOGOUT</button>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyAZ_Kl887_u0uenpD4QIseeAq4i62LmAvM",
+            authDomain: "letus-7d9c3.firebaseapp.com",
+            databaseURL: "https://letus-7d9c3.firebaseio.com",
+            projectId: "letus-7d9c3",
+            storageBucket: "letus-7d9c3.appspot.com",
+            messagingSenderId: "137689012095",
+            appId: "1:137689012095:web:64c87b36dda2dd5d082c4a",
+            measurementId: "G-TH5P19LY0K"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+    <script src="proset.js"></script>
+</body>
+</html>
