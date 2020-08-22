@@ -63,7 +63,15 @@ function signup(){
       var isAnonymous = user.isAnonymous;
       var uid = user.uid;
       var providerData = user.providerData;
-      var user = firebase.auth().currentUser
+      var user = firebase.auth().currentUser;
+      user.updateProfile({
+        
+        photoURL: "defaultDP.jpg"
+      }).then(function() {
+        console.log('defaultdp sucessful');
+      }).catch(function(error) {
+        // An error happened.
+      });
   
       if(user != null){
         document.getElementById("signed_in").style.display = "block";

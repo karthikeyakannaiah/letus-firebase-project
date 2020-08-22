@@ -99,7 +99,7 @@ body{
     position: static;
     background-image: linear-gradient(to right,orange,yellow,orange,red);
 }
-#updatemind,#posts{
+#updatemind,#posts,#postpublic{
     border: 2px;
     margin: 10px;
     padding: 15px;
