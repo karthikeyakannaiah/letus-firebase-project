@@ -1,3 +1,6 @@
+(note: this is a still incomplete project, Work is still in progress)
+
+
 This is a personal learning project of mine
 
 I wanted to utilize and learn firebase and develop web applications
