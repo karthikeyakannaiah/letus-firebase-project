@@ -93,8 +93,11 @@
             border-bottom-right-radius: 0px;
         }
         #dispName {
-            color: white;
+            color: yellow;
             text-align: center;
+            padding: 20px;
+            width: auto;
+            background-color: rgb(24, 20, 20);
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         #edit{
@@ -128,6 +131,7 @@
             width:200px;
             height:200px;
             border-radius: 50%;
+            background-color: whitesmoke;
         }
         .userprofile{
             text-align: center;
@@ -139,11 +143,33 @@
             color: black;
             border: none;
         }
+        #donebtn:hover{
+            background-color: aquamarine;
+        }
         #editbtn{
             padding: 5px;
-            background-color: cadetblue;
+            background-color: rgb(16, 34, 202);
             color: black;
             border: none;
+            text-align: center;
+            padding: 10px;
+            text-transform: capitalize;
+            border-radius: 20px;
+            border-top-left-radius: 0px;
+            
+        }
+        .label{
+            color: yellow;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            
+        }
+        #fileButton{
+            color: whitesmoke;
+            padding: 20px;
+            width: 250px;
+            font-size: 15px;
+            text-align: center;
         }
     </style>
 </head>
@@ -168,6 +194,10 @@
     <div class="editprofile" id="edit">
         <input type="text" placeholder="update displayname" id="updatedisplayname">
         <input type="button" value="update your display name" class="btn" id="updateDispname">
+        <br><br>
+        <label for="image" class="label">Update Profile Picture :</label><br>
+        <input type="file"  id="fileButton" name="profilepicture"><br>
+        <progress id="uploader" value="0" max="100">0%</progress>
         <br><br>
         <button id="donebtn" onclick="done()">Done</button>
         
