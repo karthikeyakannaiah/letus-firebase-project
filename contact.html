@@ -58,12 +58,6 @@
         .btn:hover{
             background-position: right;
         }
-        #title,#descr,#own{
-            color:rgb(0, 0, 0);
-            text-align:center;
-            font-family: "montserrat",sans-serif;
-            
-        }
         #navbar {
             overflow: hidden;
             background-color: yellow  ;
@@ -99,46 +93,66 @@
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 0px;
         }
-        .forlion{
-            background-color: yellow;
-            list-style-type: none;
-            padding: 20px;
-            width:500px;
-
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        #mindposts{
-            background-color: black;
-        }
-        .delbtn{
-            font-size: 15px;
-            position: static;
-            padding: 15px;
-            width:130px;
-            border-bottom-left-radius: 30px;
-            border-top-left-radius: 30px;
-            border: none;
+        #contactinfo{
             text-align: center;
-            color: rgb(24, 19, 19);
-            text-transform: capitalize;
-            background-image: linear-gradient(to right,red,orangered,orange,yellow);
+        }
+        #contactinfo a{
+            text-decoration: none;
+            color: orangered;
+            font-size: medium;
+            padding: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #about{
+            color: yellow;
+            font-size: large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        pre{
+            color: whitesmoke;
+            font-size: medium;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     </style>
 </head>
 <body>
-    <!--
-    <h1 id="title" style="color:white">LetUs</h1>
-    <h3 id="descr" style="color:white">A platform for Us</h3>
-    <p id="owned">@KDL-projects-2020</p>
-    <p id="owned">team<b>ACHIEVER</b></p>-->
     <div id="navbar">
         <a class="active" href="index.html">Let Us</a>
-        <a href="myposts.html" class="newactive">My posts</a>
+        <a href="myposts.html" >My posts</a>
         <a href="profileandsettings.html">Profile and Settings</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="newactive">Contact</a>
         <button class="btn btn1" id="logout" onclick="logout()">LOGOUT</button>
+    </div><br><br><br>
+    <div id="contactinfo">
+        <a href="https://www.instagram.com/karthikeyakannaiah/?hl=en">instagram</a><br><br>
+        <a href="https://github.com/karthikeyakannaiah/">github</a><br><br>
+        <a href="https://www.linkedin.com/in/karthikeya-kannaiah-052176194">linkedin</a><br><br>
+        <a href="https://github.com/karthikeyakannaiah/letus-firebase-project">repository link of this project</a><br><br><br><br>
+        <label id="about">About this website</label><br><br>
+        <pre>(note: this is a still incomplete project, Work is still in progress)
+
+
+            This is a personal learning project of mine
+            
+            I wanted to utilize and learn firebase and develop web applications
+            
+            If you are seeing this 
+            
+            letus is a personal social platform type web app, whatever, 
+            to be honest I can't define it perfectly lol. 
+            
+            
+            
+            where you can post things to yourself and have a profile 
+            
+            pretty basic things or feature in social network platforms
+            
+            I am exploring web dev currently, there is a lot still to cover
+            
+            Doing Learning projects like this, are way to understand and study and develop yourself 
+            
+            personally I believe this</pre>
     </div>
-    <ul id="mindposts" class="posts"></ul>
 
 
 
@@ -159,6 +173,15 @@
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
         </script>
-    <script src="myposts.js"></script>
+    <script>
+        function logout(){
+            firebase.auth().signOut().then(function() {
+            // Sign-out successful.
+            }).catch(function(error) {
+            // An error happened.
+            });
+            location.replace("index.html");
+        }
+    </script>
 </body>
 </html>

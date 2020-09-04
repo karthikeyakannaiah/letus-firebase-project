@@ -12,7 +12,7 @@ to be honest I can't define it perfectly lol.
 
 
 
-where you can post things to youself and also to public and have a profile 
+where you can post things to yourself and have a profile 
 
 pretty basic things or feature in social network platforms
 

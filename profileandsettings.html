@@ -128,6 +128,12 @@
             background-color: aliceblue;
         }
         .image{
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            background-color: whitesmoke;
+        }
+        #profilepic{
             width:200px;
             height:200px;
             border-radius: 50%;
@@ -183,11 +189,11 @@
         <a class="active" href="index.html">Let Us</a>
         <a href="myposts.html">My posts</a>
         <a href="profileandsettings.html" class="newactive" id="proset">Profile and Settings</a>
-        <a href="javascript:void(0)">Contact</a>
+        <a href="contact.html">Contact</a>
         <button class="btn btn1" id="logout" onclick="logout()">LOGOUT</button>
     </div><br>
     <div class="userprofile" id="userprofile">
-        <img src="" alt="profile picture" id="profilepic" class="image"><br>
+        <img src="" alt="profile picture" id="profilepic"><br>
         <h1 class="displayname" id="dispName"></h1>
         <button id="editbtn" onclick="edit()">edit profile</button>
     </div>
