@@ -17,7 +17,7 @@ about
 (note: this is a still incomplete project, Work is still in progress)
 
 
-This is a personal learning project of mine
+>"This is a personal learning project of mine
 
 I wanted to utilize and learn firebase and develop web applications
 
@@ -36,4 +36,4 @@ I am exploring web dev currently, there is a lot still to cover
 
 Doing Learning projects like this, are way to understand and study and develop yourself 
 
-personally I believe this
+personally I believe this"
