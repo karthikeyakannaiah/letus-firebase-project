@@ -1,24 +1,23 @@
 ![photo](icon.png)
 
 
-##**Visit** [Letus](https://letus-7d9c3.web.app/)
+**Visit** [Letus](https://letus-7d9c3.web.app/)
 ![letus](letusHome.jpg)
-languages used
-HTML
-CSS
-JS
+**languages used**
+* HTML
+  * CSS
+    * JavaScript
+
+
+**Tools used**
+* Firebase
+
+
+*(note: this is a still incomplete project, Work is still in progress)*
 
 
 
-
-
-
->about
-
-
-
-(note: this is a still incomplete project, Work is still in progress)
-
+>***about***
 
 >This is a personal learning project of mine
 >
