@@ -2,7 +2,7 @@
 
 
 **Visit** [Letus](https://letus-7d9c3.web.app/)
-
+![letus](letusHome.jpg)
 languages used
 HTML
 CSS
